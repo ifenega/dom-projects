@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+
+    height: fit-content;
+}
+h5:hover {
+    border-bottom: 1px solid black;
+}
+
+header {
+    padding: 20px 16px;
+    background-color: grey;
+    height: 100px;
+    h1 {
+        font-size: 36px;
+        color: white;
+    }
+}
+
+section {
+    padding: 0 20px;
+    .input {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        input[type=text] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid grey;
+            background-color: #8080800f;
+            
+        }
+        input[type=text].delete-on {
+            border: 1px solid red;
+        }
+
+        button.delete-on {
+            background-color: red;
+        }
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #36a436e8;
+            border: none;
+            width: 7%;
+            border-radius: 8px;
+            
+        }
+
+    }
+
+    .uncompleted {
+        padding: 20px;
+        &-header {
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+
+            .active {
+                color: red;
+                transform: scale(1.1);
+            }
+            .active:hover {
+                border-bottom: none;
+            }
+        }
+
+        &-task {
+
+            
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                
+            
+                h4 {
+                    font-weight: 400;
+                }
+
+                .activity-container {
+                    display: flex;
+                    .box {
+                        display: unset;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid black;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .box.checked {
+                        background-color: #36a436e8;
+                        border: none;
+                    }
+                    .box.active, .delete.active {
+                        display: none;
+                    }
+                    .delete {
+                        display: unset;
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    
+                }
+                .checked {
+                    text-decoration: line-through;
+                    
+                }
+           
+            
+            
+        
+        }
+
+    }
+}
+
+.items{
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #80808012;
+}
+

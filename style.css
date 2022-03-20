@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+h5:hover {
+  border-bottom: 1px solid black;
+}
+
+header {
+  padding: 20px 16px;
+  background-color: grey;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: white;
+}
+
+section {
+  padding: 0 20px;
+}
+
+section .input {
+  margin: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+section .input input[type=text] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  background-color: #8080800f;
+}
+
+section .input input[type=text].delete-on {
+  border: 1px solid red;
+}
+
+section .input button.delete-on {
+  background-color: red;
+}
+
+section .input button {
+  padding: 10px;
+  color: white;
+  background-color: #36a436e8;
+  border: none;
+  width: 7%;
+  border-radius: 8px;
+}
+
+section .uncompleted {
+  padding: 20px;
+}
+
+section .uncompleted-header {
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+section .uncompleted-header .active {
+  color: red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section .uncompleted-header .active:hover {
+  border-bottom: none;
+}
+
+section .uncompleted-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .uncompleted-task h4 {
+  font-weight: 400;
+}
+
+section .uncompleted-task .activity-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .uncompleted-task .activity-container .box {
+  display: unset;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section .uncompleted-task .activity-container .box.checked {
+  background-color: #36a436e8;
+  border: none;
+}
+
+section .uncompleted-task .activity-container .box.active, section .uncompleted-task .activity-container .delete.active {
+  display: none;
+}
+
+section .uncompleted-task .activity-container .delete {
+  display: unset;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+section .uncompleted-task .activity-container .delete img {
+  width: 40px;
+  height: 40px;
+}
+
+section .uncompleted-task .checked {
+  text-decoration: line-through;
+}
+
+.items {
+  padding: 5px 0;
+  margin: 5px 0;
+  border-bottom: 1px solid #80808012;
+}
+/*# sourceMappingURL=style.css.map */
